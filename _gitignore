@@ -1,0 +1,17 @@
+
+
+# Build folder
+   _dist/*
+   _book/*
+  # Resources folder
+   resources/*
+
+edit_files.sh
+/_pdf
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*

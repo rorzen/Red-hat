@@ -1,0 +1,32 @@
+
+
+== Overview
+
+=== What is Apiman?
+The current objective in enterprise software development is to create decoupled client applications and use APIs to associate them. This helps to reuse the functionalities across different applications and business units.
+
+The key features of Apiman are as follow:
+
+* Configuring centralized governance policy
+* Tracking APIs and related consumers
+* Sharing and identifying APIs with ease
+* Leveraging common policy configuration across different APIs.
+
+The Apiman is based on three elements:
+
+* An *Organization*, where all the plans and policies of an Apiman are stored. It can match the entire organization or a section of it.
+* A *Plan* explains all the services according to the given policies. It helps to define various Apiman services.
+* A *Policy* is an action executed by Apiman gateway when any service request is issued. In the data model policies are at the last level and the basis for building higher level elements.
+
+=== Why JBoss Apiman is needed?
+
+The purpose of JBoss Apiman is to provide an easy to use and powerful API Manager that makes the API Gateway fast, small, and low overhead to execute standard API management functionality.
+
+Apiman fulfills API providers’ and consumers’ needs by implementing:
+
+* *API Manager* - The API Manager provides an easy way for API providers to use a web UI to define API contracts for their APIs, apply these contracts across multiple APIs, and control role-based user access and API versioning. These contracts can govern access to APIs and limits on the rate at which consumers can access APIs. The same UI enables API consumers to easily locate and access APIs.
+
+* *API Gateway* - The gateway applies the API contract policies of API Management by enforcing at runtime the rules defined in the contracts and tracking the API consumers’ use of the APIs for every request made to the APIs. The way that the API Gateway works is that the consumer of the API accesses the API through a URL that designates the API Gateway as a proxy for the API. If the policies defined to govern access to the API, the API Gateway then proxies requests to the API’s backend API implementation.
+
+
+ 

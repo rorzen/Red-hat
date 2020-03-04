@@ -1,0 +1,32 @@
+
+
+== Installing the Apiman in Wildfly10
+
+=== Prerequisites
+To install Apiman, the following software components must be installed on your system:
+
+* Java (version 8)
+* Git
+* Maven
+
+=== Installing WildFly 10
+Perform the following steps to install WildFly 10:
+
+1. Download the http://download.jboss.org/wildfly/10.1.0.Final/wildfly-10.1.0.Final.zip[WildFly 10.1.0.Final] and unpack the file into the directory in which you want to run the server.
+2. Download the http://downloads.jboss.org/apiman/1.5.5.Final/apiman-distro-wildfly10-1.5.5.Final-overlay.zip[Apiman 1.5.5.Final] overlay for WildFly 10 and unpack the file into the WildFly directory.
+
+=== Starting the Server
+The apiman overlay contains the following:
+
+* apiman binaries (several WAR files)
+* apiman-specific WildFly 9 configuration (standalone-apiman.xml)
+* apiman RDBMS datasource (h2)
+* pre-configured admin user with password admin123!
+* pre-configured h2 database for the API Manager (populated with default values)
+* embedded Elasticsearch instance for metrics and gateway storage
+
+Use the following command to start the server:
+
+[listing]
+cd 10.1.0.Final
+./bin/standalone.sh -c standalone-apiman.xml

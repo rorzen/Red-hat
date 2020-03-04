@@ -1,0 +1,49 @@
+= Apiman
+//
+//Text below will appear above the date on the title page
+Apiman
+:doctype: book
+//
+//These items appear at the bottom of the title page:
+//:version-label: Apiman
+//:revnumber:  eg xx.xx
+:revdate: March 2020
+//
+//Optional variables
+:subtitle: Apiman
+:revremark:
+:product-name: Apiman
+:footer-text-field: footer-text-field
+//
+:document-title: Apiman
+//This field appears in the header and cannot be blank:
+:relnumber: 1.0
+//
+//These fields appear in the footer and cannot be blank:
+:part-number:
+:issue: Issue 1.0
+:copyright: 2020
+//
+//These fields are not used in the PDF:
+:last-update-label!:
+:other-info-link: http://apiman.io
+:other-info-link-label: Learn more
+//
+//Other variables:
+:toc: left
+:toclevels: 6
+:source-highligher: prettify
+:version: {relnumber}
+
+:imagesdir: images
+:book-build:
+:icons: font
+//:data-uri://
+
+:includedir1: content
+
+
+include::{includedir1}/overview.adoc[]
+include::{includedir1}/install.adoc[]
+include::{includedir1}/config.adoc[]
+include::{includedir1}/test.adoc[]
